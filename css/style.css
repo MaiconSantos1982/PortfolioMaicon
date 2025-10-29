@@ -163,29 +163,3 @@ body {
   * {
     transition: box-shadow .18s, transform .20s;
   }
-
-.player-grid {
-  /* Adiciona espaçamento suave entre os cards */
-}
-
-.player-col {
-  display: flex;
-  justify-content: center;
-}
-
-.img-player {
-  max-width: 320px;      /* Cards grandes desktop */
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 8px 32px -12px rgba(30,41,59,0.11);
-  transition: box-shadow .22s, transform .2s;
-}
-
-@media (max-width: 992px) {
-  .img-player { max-width: 240px }
-}
-@media (max-width: 767px) {
-  /* Cada imagem ocupa linha inteira no mobile */
-  .player-col { width: 100%; max-width: 100%; }
-  .img-player { max-width: 98vw; }
-}
