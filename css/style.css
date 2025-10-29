@@ -1,0 +1,166 @@
+/* Reset básico e tipografia */
+body {
+    background: #f7f8fa;
+    color: #222;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .fw-bold {
+    color: #16213e;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+  }
+  
+  /* Título centralizado do header */
+  .titulo-destaque {
+    font-size: 2.6rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.75em;
+    color: #16213e;
+    text-shadow: 0 2px 6px rgba(18,34,76,0.06);
+  }
+  
+  /* Destaque texto bio */
+  .destaque-texto {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 2.1rem 2.1rem;
+    box-shadow: 0 8px 38px -10px rgba(33,46,89,.13);
+    line-height: 1.65;
+    font-size: 1.16rem;
+    font-weight: 400;
+    transition: box-shadow .18s;
+  }
+  
+  .shadow-bloco {
+    box-shadow: 0 8px 38px -10px rgba(33,46,89,.08), 0 2px 7px -1px rgba(50,62,88,0.06);
+  }
+  
+  /* Imagem perfil sem máscara */
+  .perfil-sem-mascara {
+    border-radius: 0 !important;
+    background: none;
+  }
+  
+  .destaque-img {
+    box-shadow: 0 14px 46px -5px rgba(38,66,179,0.11), 0 3px 10px -1px rgba(44,68,125,0.09);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .destaque-img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 26px 80px -9px rgba(26,46,180,0.16);
+  }
+  
+  /* Cards vídeo com sombra e efeito leve de profundidade */
+  .video-3d-sombra {
+    border: none;
+    background: #f9fafe;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px -6px rgba(28,57,160,0.11), 0 3px 8px -1px rgba(0,0,0,0.05);
+    transition: box-shadow .22s, transform .22s;
+    overflow: hidden;
+  }
+  .video-3d-sombra:hover {
+    box-shadow: 0 14px 40px -4px rgba(40,67,179,0.18), 0 8px 24px -2px rgba(0,0,0,0.11);
+    transform: translateY(-2px) scale(1.024);
+  }
+  
+  /* Efeito zoom imagem ao hover */
+  .hover-zoom {
+    transition: transform .26s cubic-bezier(.4, .14, .27, 1.16), box-shadow .23s;
+    cursor: pointer;
+  }
+  .hover-zoom:hover, .hover-zoom:focus {
+    transform: scale(1.075);
+    box-shadow: 0 12px 36px -6px rgba(56,96,194,0.14), 0 4px 14px -1px rgba(0,0,0,0.09);
+    z-index: 2;
+  }
+  
+  /* Cards imagens dos players */
+  .imagem-player {
+    border: none;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 18px -6px rgba(0,0,0,0.09);
+    transition: box-shadow .21s;
+  }
+  .imagem-player:hover {
+    box-shadow: 0 14px 40px -6px rgba(56,96,194,0.17), 0 4px 18px -2px rgba(0,0,0,0.11);
+  }
+  
+  .sombra-3d {
+    box-shadow: 0 5px 24px -7px rgba(30,41,59,0.13), 0 1.5px 3px -1px rgba(0,0,0,0.06);
+  }
+  
+  .card-body {
+    background: none;
+    padding: .75rem .5rem .95rem .5rem;
+    font-size: 1rem;
+  }
+  
+  /* Modal do depoimento */
+  .modal-content {
+    border-radius: 1.3rem;
+  }
+  
+  /* CTA WhatsApp */
+  .cta-section {
+    background: #ecf3ff;
+    border-radius: 1.2rem;
+    margin-inline: auto;
+    box-shadow: 0 2px 22px -7px rgba(0,46,81,0.13);
+    max-width: 700px;
+  }
+  
+  .whatsapp-cta {
+    font-size: 1.14rem;
+    padding: .8rem 2.2rem;
+    border-radius: 2.5rem;
+    letter-spacing: .02em;
+    display: inline-flex;
+    align-items: center;
+    gap: .3em;
+    transition: box-shadow .18s;
+  }
+  .whatsapp-cta:hover {
+    box-shadow: 0 8px 30px -6px #25d36676, 0 4px 18px -2px #238a569f;
+  }
+  
+  /* Responsividade fina */
+  @media (max-width: 1200px) {
+    .destaque-texto { padding: 1.4rem 1rem; font-size: 1.06rem; }
+    .titulo-destaque { font-size: 2.15rem; }
+    .destaque-img { max-width: 190px }
+  }
+  
+  @media (max-width: 992px) {
+    .destaque-texto { padding: 1.1rem 1rem; font-size: 1.03rem; }
+    .titulo-destaque { font-size: 1.75rem; }
+    .destaque-img { max-width: 150px }
+  }
+  
+  @media (max-width: 768px) {
+    .destaque-texto {
+      margin-bottom: 1.3em;
+      text-align: center !important;
+    }
+    .titulo-destaque { font-size: 1.35rem; }
+    .destaque-img { max-width: 110px }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2, h3, .fw-bold { font-size: 1.1rem }
+    .container, .container-fluid { padding-left: .7em; padding-right: .7em; }
+    .destaque-texto { padding: .6rem .2rem; font-size: 0.98rem; }
+  }
+  
+  /* General transitions */
+  * {
+    transition: box-shadow .18s, transform .20s;
+  }
+  
